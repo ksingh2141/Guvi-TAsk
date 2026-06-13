@@ -88,7 +88,8 @@ class TestZenPortal:
 
         self.popup_close = page.locator(
             "button[aria-label='Close popup']"
-        )
+        ).click()
+        
 
         dashboard.logout()
 
