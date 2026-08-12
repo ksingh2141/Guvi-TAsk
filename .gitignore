@@ -1,0 +1,40 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
+
+# Allure generated report
+reports/allure-report/
+
+# Allure raw results - uncomment if you don't want to commit them
+# reports/allure-results/
+
+# Generated HTML reports
+reports/report.html
+
+# Logs
+logs/*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python coverage
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp

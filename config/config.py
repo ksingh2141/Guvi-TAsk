@@ -1,0 +1,21 @@
+URL = "https://www.saucedemo.com/"
+
+STANDARD_USER = "standard_user"
+
+LOCKED_USER = "locked_out_user"
+
+PROBLEM_USER = "problem_user"
+
+PERFORMANCE_USER = "performance_glitch_user"
+
+ERROR_USER = "error_user"
+
+VISUAL_USER = "visual_user"
+
+PASSWORD = "secret_sauce"
+
+FIRST_NAME = "Kundan"
+
+LAST_NAME = "Kumar"
+
+ZIP = "800001"
