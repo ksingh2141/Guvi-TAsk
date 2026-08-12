@@ -1,0 +1,79 @@
+# Test Execution Summary
+
+The automation test suite was executed successfully using **Pytest** with the **pytest-html** plugin.
+
+## Execution Details
+
+| Parameter | Value |
+|-----------|-------|
+| Test Framework | Pytest |
+| Automation Tool | Selenium WebDriver |
+| Report Format | HTML |
+| Report Plugin | pytest-html v4.2.0 |
+| Execution Date | 01-Aug-2026 |
+| Execution Time | 23:31:47 |
+| Operating System | Windows 11 |
+| Python Version | 3.14.2 |
+| Pytest Version | 9.1.1 |
+| Total Execution Time | 00:01:18 |
+
+---
+
+## Test Summary
+
+| Metric | Result |
+|--------|--------|
+| Total Test Cases | 10 |
+| Passed | 10 |
+| Failed | 0 |
+| Skipped | 0 |
+| Errors | 0 |
+
+
+**Overall Result:**  **PASS (100% Success Rate)**
+
+---
+
+## Executed Test Cases
+
+| Test Case ID | Test Name | Status |
+|--------------|-----------|--------|
+| TC01 | Verify URL |  Passed |
+| TC02 | Verify Page Title |  Passed |
+| TC03 | Verify Login Button |  Passed |
+| TC04 | Verify Sign-Up Button |  Passed |
+| TC05 | Verify Sign-Up Navigation |  Passed |
+| TC06 | Verify Valid Login |  Passed |
+| TC07 | Verify Invalid Login |  Passed |
+| TC08 | Verify Menu Items |  Passed |
+| TC09 | Verify Dobby Assistant |  Passed |
+| TC10 | Verify Logout Functionality |  Passed |
+
+---
+
+## HTML Test Report
+
+The HTML execution report is generated automatically after each test run.
+
+**Report Location:**
+
+```
+reports/report.html
+```
+
+The report includes:
+
+- Execution summary
+- Test case status
+- Execution duration
+- Environment details
+- Pass/Fail statistics
+
+---
+
+## Execution Outcome
+
+- Successfully executed all 10 planned test cases.
+- All test cases passed without failures or errors.
+- Browser sessions were closed successfully after execution.
+- The framework generated an HTML report for result analysis.

@@ -1,0 +1,4 @@
+URL = "https://robotsparebinindustries.com/#/"
+
+USERNAME = "maria"
+PASSWORD = "thoushallnotpass"

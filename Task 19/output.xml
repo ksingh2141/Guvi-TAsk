@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-06-25T19:22:38.478354" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\devil\PycharmProjects\RobotFrameworkProject\tests\login_test.robot">
+<kw name="Open Browser To Application" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:38.946773" level="INFO">Opening browser 'chrome' to base url 'https://robotsparebinindustries.com/#/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-25T19:22:38.946238" elapsed="1.701301"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-25T19:22:40.648003" elapsed="0.034782"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-06-25T19:22:40.682999" elapsed="0.001256"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:38.945264" elapsed="1.739152"/>
+</kw>
+<test id="s1-t1" name="Verify Login Submit Sales Form And Logout" line="8">
+<kw name="Login To Application" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:40.686266" level="INFO">Typing text 'maria' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:40.685808" elapsed="0.256260"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:40.943357" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-06-25T19:22:41.008246" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:40.942639" elapsed="0.160617"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:41.103874" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:41.103502" elapsed="0.150562"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2026-06-25T19:22:40.685408" elapsed="0.568936"/>
+</kw>
+<kw name="Verify Login Successful" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:firstname</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-25T19:22:41.255788" elapsed="1.997570"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:41.255192" elapsed="1.998327"/>
+</kw>
+<kw name="Fill Sales Form" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:43.254724" level="INFO">Typing text 'John' into text field 'id:firstname'.</msg>
+<arg>id:firstname</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:43.254370" elapsed="0.081219"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:43.336262" level="INFO">Typing text 'Smith' into text field 'id:lastname'.</msg>
+<arg>id:lastname</arg>
+<arg>Smith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:43.335881" elapsed="0.091244"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:43.427633" level="INFO">Selecting options from selection list 'id:salestarget' by value 50000.</msg>
+<arg>id:salestarget</arg>
+<arg>50000</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-06-25T19:22:43.427331" elapsed="0.089221"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:43.517154" level="INFO">Typing text '60000' into text field 'id:salesresult'.</msg>
+<arg>id:salesresult</arg>
+<arg>60000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:43.516834" elapsed="0.115280"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:43.253990" elapsed="0.378253"/>
+</kw>
+<kw name="Submit Sales Form" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:43.633429" level="INFO">Clicking button 'xpath://button[contains(text(),'Submit')]'.</msg>
+<arg>xpath://button[contains(text(),'Submit')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:43.633005" elapsed="0.223436"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:43.632685" elapsed="0.224136"/>
+</kw>
+<kw name="Verify Sales Form Submitted" owner="keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Home</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-25T19:22:43.859553" elapsed="0.097862"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:43.858670" elapsed="0.098987"/>
+</kw>
+<kw name="Logout From Application" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-06-25T19:22:43.959551" level="INFO">Clicking button 'xpath://button[contains(.,'Log out')]'.</msg>
+<arg>xpath://button[contains(.,'Log out')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-25T19:22:43.959062" elapsed="0.155316"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:43.958474" elapsed="0.156152"/>
+</kw>
+<doc>Verify user can login, submit sales form and logout successfully</doc>
+<tag>Smoke</tag>
+<status status="PASS" start="2026-06-25T19:22:40.684520" elapsed="3.431099"/>
+</test>
+<kw name="Close Browser Session" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-25T19:22:44.119855" elapsed="2.267389"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:44.119368" elapsed="2.268280"/>
+</kw>
+<status status="PASS" start="2026-06-25T19:22:38.480233" elapsed="7.907610"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="1" fail="0" skip="0">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
